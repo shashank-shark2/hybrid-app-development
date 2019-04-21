@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "895490797877",
+    "firebase_url": "https://sscw-svit.firebaseio.com",
+    "project_id": "sscw-svit",
+    "storage_bucket": "sscw-svit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895490797877:android:30100577ab79a5f7",
+        "android_client_info": {
+          "package_name": "com.sapphirecoders.sscwsvit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895490797877-859kojomcnhtav6bsean1gria1jkjiaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_FNQbCj5pQfkefXqwqxYdlS_dWynAaSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895490797877-859kojomcnhtav6bsean1gria1jkjiaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
