@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "895490797877",
-    "firebase_url": "https://sscw-svit.firebaseio.com",
-    "project_id": "sscw-svit",
-    "storage_bucket": "sscw-svit.appspot.com"
+    "project_number": "1089398520406",
+    "firebase_url": "https://sscwsvit.firebaseio.com",
+    "project_id": "sscwsvit",
+    "storage_bucket": "sscwsvit.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:895490797877:android:30100577ab79a5f7",
+        "mobilesdk_app_id": "1:1089398520406:android:303b014f62297841",
         "android_client_info": {
-          "package_name": "com.sapphirecoders.sscwsvit"
+          "package_name": "com.sappirecoders.sscwsvit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "895490797877-859kojomcnhtav6bsean1gria1jkjiaq.apps.googleusercontent.com",
+          "client_id": "1089398520406-rf0lsf51go1fbaasnduncg74grr2jlp2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_FNQbCj5pQfkefXqwqxYdlS_dWynAaSY"
+          "current_key": "AIzaSyBHhs1iiEEHoLFSRqV00Jg3UkSWlGwN790"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "895490797877-859kojomcnhtav6bsean1gria1jkjiaq.apps.googleusercontent.com",
+              "client_id": "1089398520406-rf0lsf51go1fbaasnduncg74grr2jlp2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
