@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "eslint": "^5.16.0",
     "react": "16.8.3",
     "react-native": "0.59.3",
     "react-native-fading-slides": "^0.3.1",
