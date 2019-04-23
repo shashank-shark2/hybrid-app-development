@@ -1,5 +1,5 @@
 import { createMaterialBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-material-bottom-tabs';  
-import { createBottomTabNavigator, createAppContainer} from 'react-navigation'  
+import { createBottomTabNavigator, createAppContainer, createDrawerNavigator} from 'react-navigation'  
 import {StyleSheet, Text, View,Button} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import React from 'react'
@@ -11,7 +11,7 @@ import HomeScreen from '../Screens/HomeScreen'
 import ProfileScreen from '../UDScreens/Profile'
 
 
-const TabNavigator = createMaterialBottomTabNavigator(  
+const TabNavigator = createDrawerNavigator(  
   {  
       Home: { screen: HomeScreen,  
           navigationOptions:{  
