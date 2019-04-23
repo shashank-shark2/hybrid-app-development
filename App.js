@@ -1,5 +1,4 @@
 import React from 'react'
-import { StyleSheet, Platform, Image, Text, View } from 'react-native'
 import { createSwitchNavigator, createAppContainer } from 'react-navigation'
 
 import Loading from './src/authscreens/Loading'
