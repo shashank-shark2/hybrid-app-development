@@ -64,6 +64,7 @@ const TabNavigator = createDrawerNavigator(
     activeColor: '#f0edf6',  
     inactiveColor: '#226557',  
     barStyle: { backgroundColor: '#3BAD87' },
+    drawerBackgroundColor: 'white',
     
   },  
 );  
