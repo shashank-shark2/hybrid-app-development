@@ -14,13 +14,17 @@
     "eslint": "^5.16.0",
     "react": "16.8.3",
     "react-native": "0.59.3",
+    "react-native-bouncy-drawer": "^1.0.1",
     "react-native-elements": "^1.1.0",
     "react-native-firebase": "^5.3.1",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-paper": "^2.15.2",
     "react-native-vector-icons": "^6.4.2",
+    "react-native-view": "^1.1.0",
     "react-navigation": "^3.8.1",
-    "react-navigation-material-bottom-tabs": "^1.0.0"
+    "react-navigation-material-bottom-tabs": "^1.0.0",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
