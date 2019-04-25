@@ -26,8 +26,8 @@ const DrawerContent = ({ navigateTo, activeRoute, routes, closeDrawer }) => (
         <Icon name="airplane-takeoff" size={50} color={drawerLogoColor} />
       </View>
       <View style={styles.subTitle}>
-        <Text style={styles.drawerTitle}>Travel App</Text>
-        <Text style={styles.drawerEmail}>pablodarde@gmail.com</Text>
+        <Text style={styles.drawerTitle}>Coding Forums - SSCW</Text>
+        <Text style={styles.drawerEmail}>shashankj.16cs@saividya.ac.in</Text>
       </View>
     </View>
     {routes.map(route => (
