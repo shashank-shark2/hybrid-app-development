@@ -11,12 +11,12 @@ import {
 } from 'react-native';
 
 // importing the navigation screens
-import PersonalNavigator from '../DeepNavigation/HomeScreenNavigators/PersonalNavigator' 
-
+// import PersonalNavigator from '../DeepNavigation/HomeScreenNavigators/PersonalNavigator' 
+import MainNavigatorForAllGrid from '../DeepNavigation/HomeScreenNavigators/MainNavigatorForAllGrid'
 export default class Home extends Component{
   render(){
     return (
-      <PersonalNavigator />
+      <MainNavigatorForAllGrid />
     )
   }
 }
