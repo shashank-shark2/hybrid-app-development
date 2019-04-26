@@ -5,7 +5,7 @@ export default class Screen3 extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.TextHere}>Screen 1</Text>
+                <Text style={styles.TextHere}>Screen 3</Text>
             </View>
         )
     }
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     TextHere: {
-        alignContent: 'center',
-        justifyContent: 'center',
+        textAlign: 'center',
     }
 })

@@ -14,10 +14,9 @@ export default class Screen1 extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     TextHere: {
-        alignContent: 'center',
-        justifyContent: 'center',
+        textAlign: 'center',
     }
 })
