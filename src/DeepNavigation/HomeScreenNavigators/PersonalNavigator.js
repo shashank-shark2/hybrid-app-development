@@ -12,7 +12,7 @@ import Screen3 from '../../screen-components/HomeScreenComponents/Personal/Scree
 import Screen4 from '../../screen-components/HomeScreenComponents/Personal/Screen4'
 
 
-const TabNavigator = createMaterialBottomTabNavigator(  
+const TabNavigatorGridYou = createMaterialBottomTabNavigator(
   {  
     Screen1: { screen: Screen1,  
           navigationOptions:{  
@@ -75,18 +75,18 @@ const TabNavigator = createMaterialBottomTabNavigator(
   },  
 );  
 
-const StackNavig = createStackNavigator({
-    MainHomeScreen : {
-        screen: HomeNavigatorMain,
-    },
-    deepFlow: TabNavigator,
-},
-{
-    initialRouteName: "MainHomeScreen",
-    headerMode: 'none',
-    navigationOptions: {
-      headerVisible: false,
-    }
-})
+// const StackNavig = createStackNavigator({
+//     MainHomeScreen : {
+//         screen: HomeNavigatorMain,
+//     },
+//     YouGridNavigationScreen: TabNavigatorGridYou, 
+// },
+// {
+//     initialRouteName: "MainHomeScreen",
+//     headerMode: 'none',
+//     navigationOptions: {
+//       headerVisible: false,
+//     }
+// })
 
-export default createAppContainer(StackNavig);  
+export default createAppContainer(TabNavigatorGridYou);  
