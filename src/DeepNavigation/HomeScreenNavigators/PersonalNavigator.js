@@ -20,7 +20,10 @@ const TabNavigator = createMaterialBottomTabNavigator(
               tabBarIcon: ({ tintColor }) => (  
                   <View>  
                       <Icon style={[{color: tintColor}]} size={25} name={'ios-home'}/>  
-                  </View>),  
+                  </View>),
+                  activeColor: '#000000',  
+                  inactiveColor: '#ffffff',  
+                  barStyle: { backgroundColor: '#ffffff' },    
           }  
       },  
       Screen2: { screen: Screen2,  
@@ -30,9 +33,9 @@ const TabNavigator = createMaterialBottomTabNavigator(
                   <View>  
                       <Icon style={[{color: tintColor}]} size={25} name={'ios-calendar'}/>  
                   </View>),  
-              activeColor: '#f60c0d',  
-              inactiveColor: '#f65a22',  
-              barStyle: { backgroundColor: '#f69b31' },  
+              activeColor: '#000000',  
+              inactiveColor: '#ffffff',  
+              barStyle: { backgroundColor: '#ffffff' },  
           }  
       },  
       Screen3: { screen: Screen3,  
@@ -42,9 +45,9 @@ const TabNavigator = createMaterialBottomTabNavigator(
                   <View>  
                       <Icon style={[{color: tintColor}]} size={25} name={'ios-images'}/>  
                   </View>),  
-              activeColor: '#615af6',  
-              inactiveColor: '#46f6d7',  
-              barStyle: { backgroundColor: '#67baf6' },  
+              activeColor: '#000000',  
+              inactiveColor: '#ffffff',  
+              barStyle: { backgroundColor: '#ffffff' },  
           }  
       },  
       Screen4: {  
@@ -54,7 +57,10 @@ const TabNavigator = createMaterialBottomTabNavigator(
               tabBarIcon: ({ tintColor }) => (  
                   <View>  
                       <Icon style={[{color: tintColor}]} size={25} name={'ios-person'}/>  
-                  </View>),  
+                  </View>),
+                  activeColor: '#000000',  
+                  inactiveColor: '#ffffff',  
+                  barStyle: { backgroundColor: '#ffffff' }, 
           }  
       },  
   },  
@@ -62,8 +68,8 @@ const TabNavigator = createMaterialBottomTabNavigator(
     shifting: false,
     tabBarPosition: 'bottom',
     initialRouteName: "Screen1",  
-    activeColor: '#f0edf6',  
-    inactiveColor: '#226557',  
+    activeColor: '#000000',  
+    inactiveColor: '#ffffff',  
     barStyle: { backgroundColor: '#3BAD87' },
     
   },  
