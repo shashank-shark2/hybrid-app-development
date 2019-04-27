@@ -28,7 +28,7 @@ export default class Menu extends Component {
         {id:6, title: "Quick notes",   color:"#FFFFFF", members:8,  image:"https://img.icons8.com/dusk/70/000000/checklist.png", navigName:''} ,
         {id:8, title: "Team members",    color:"#FFFFFF", members:23, image:"https://img.icons8.com/dusk/70/000000/globe-earth.png", navigName:''} ,
         {id:9, title: "Code Links", color:"#FFFFFF", members:45, image:"https://img.icons8.com/color/70/000000/to-do.png", navigName:''} ,
-        {id:9, title: "Achievements",     color:"#FFFFFF", members:13, image:"https://img.icons8.com/color/70/000000/basketball.png", navigName:''} ,
+        {id:10, title: "Achievements",     color:"#FFFFFF", members:13, image:"https://img.icons8.com/color/70/000000/basketball.png", navigName:'AchieveScreen1'} ,
       ]
     };
   }
