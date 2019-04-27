@@ -22,7 +22,7 @@ export default class Menu extends Component {
         {id:1, title: "You",      color:"#FFFFFF", members:8,  image:"https://img.icons8.com/color/70/000000/name.png", navigName:'Screen1'},
         {id:1, title: "Questions",     color:"#FFFFFF", members:6,  image:"https://img.icons8.com/office/70/000000/home-page.png", navigName:'QuestionsScreen1'},
         {id:2, title: "Subject",     color:"#FFFFFF", members:12, image:"https://img.icons8.com/color/70/000000/two-hearts.png", navigName:'SubjectScreen1'} ,
-        {id:3, title: "Tech-Stack",   color:"#FFFFFF", members:5,  image:"https://img.icons8.com/color/70/000000/family.png", navigName:''} ,
+        {id:3, title: "Tech-Stack",   color:"#FFFFFF", members:5,  image:"https://img.icons8.com/color/70/000000/family.png", navigName:'TechStackScreen1'} ,
         {id:4, title: "Research",  color:"#FFFFFF", members:6,  image:"https://img.icons8.com/color/70/000000/groups.png", navigName:''} ,
         {id:5, title: "Your Projects",   color:"#FFFFFF", members:7,  image:"https://img.icons8.com/color/70/000000/classroom.png", navigName:''} ,
         {id:6, title: "Quick notes",   color:"#FFFFFF", members:8,  image:"https://img.icons8.com/dusk/70/000000/checklist.png", navigName:''} ,
