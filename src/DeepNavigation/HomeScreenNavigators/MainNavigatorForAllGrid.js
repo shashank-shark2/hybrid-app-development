@@ -9,6 +9,7 @@ import HomeNavigatorMain from '../../Views-navig/HomeNavigatorMain'
 import QuestionsNavigator from './QuestionsNavigator'
 import PersonalNavigator from './PersonalNavigator'
 import AchievementsNavigator from './AchievementsNavigator'
+import SubjectNavigator from './SubjectNavigator'
 
 // // importing explicit screens of You
 // import Screen1 from '../../screen-components/HomeScreenComponents/Personal/Screen1'
@@ -87,6 +88,7 @@ const StackNavig = createStackNavigator({
     YouGridNavigationScreen: PersonalNavigator, 
     QuestionsGridNavigationScreen: QuestionsNavigator,
     AchievementsGridNavigatorScreen: AchievementsNavigator,
+    SubjectGridNavigatorScreen: SubjectNavigator,
 },
 {
     initialRouteName: "MainHomeScreen",
