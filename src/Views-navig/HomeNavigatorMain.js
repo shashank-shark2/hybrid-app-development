@@ -19,7 +19,7 @@ export default class Menu extends Component {
     super(props);
     this.state = {
       data: [
-        {id:1, title: "You",      color:"#FFFFFF", members:8,  image:"https://img.icons8.com/color/70/000000/name.png", navigName:'Screen1'},
+        {id:1, title: "Progress",      color:"#FFFFFF", members:8,  image:"https://img.icons8.com/color/70/000000/name.png", navigName:'Screen1'},
         {id:1, title: "Questions",     color:"#FFFFFF", members:6,  image:"https://img.icons8.com/office/70/000000/home-page.png", navigName:'QuestionsScreen1'},
         {id:2, title: "Subject",     color:"#FFFFFF", members:12, image:"https://img.icons8.com/color/70/000000/two-hearts.png", navigName:'SubjectScreen1'} ,
         {id:3, title: "Tech-Stack",   color:"#FFFFFF", members:5,  image:"https://img.icons8.com/color/70/000000/family.png", navigName:'TechStackScreen1'} ,
