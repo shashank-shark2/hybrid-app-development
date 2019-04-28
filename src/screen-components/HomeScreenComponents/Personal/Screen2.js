@@ -1,143 +1,105 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
-  TouchableHighlight,
-  Image,
-  Alert,
-  ScrollView,
-  TextInput,
-  ListView
+  StyleSheet
 } from 'react-native';
+import {Agenda} from 'react-native-calendars';
 
-export default class ListWithSearchView extends Component {
-
+export default class AgendaScreen extends Component {
   constructor(props) {
     super(props);
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows([
-        {icon:"https://png.icons8.com/user-folder/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"},
-        {icon:"https://png.icons8.com/find-user-male/color/100/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/desktop/office/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/firefox/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/pc-on-desk/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/mandriva/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/microsoft-access/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"}, 
-        {icon:"https://png.icons8.com/user-folder/office/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"},
-        {icon:"https://png.icons8.com/facebook-messenger/color/40/2ecc71", description: "Lorem ipsum dolor sit amet, indu consectetur adipiscing elit"},
-      ]),
+      items: {}
     };
-  }
-
-  onClickListener = (viewId) => {
-    Alert.alert("Alert", "Button pressed "+viewId);
   }
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.formContent}>
-          <View style={styles.inputContainer}>
-            <Image style={[styles.icon, styles.inputIcon]} source={{uri: 'https://png.icons8.com/search/androidL/100/2ecc71'}}/>
-            <TextInput style={styles.inputs}
-                ref={'txtPassword'}
-                placeholder="Search"
-                underlineColorAndroid='transparent'
-                onChangeText={(name_address) => this.setState({name_address})}/>
-          </View>
-
-          <TouchableHighlight style={styles.saveButton} onPress={() => this.clickEventListener('search')}>
-            <Image style={[styles.icon, styles.iconBtnSearch]} source={{uri: 'https://png.icons8.com/search/androidL/100/ffffff'}}/>
-          </TouchableHighlight>
-        </View>
-
-        <ListView style={styles.notificationList} enableEmptySections={true}
-          dataSource={this.state.dataSource}
-          renderRow={(notification) => {
-            return (
-              <View style={styles.notificationBox}>
-                <Image style={styles.image}
-                  source={{uri: notification.icon}}/>
-                
-                <Text style={styles.description}>{notification.description}</Text>
-              </View>
-            )}}/>
-      </View>
+      <Agenda
+        items={this.state.items}
+        loadItemsForMonth={this.loadItems.bind(this)}
+        selected={'2019-04-28'}
+        renderItem={this.renderItem.bind(this)}
+        renderEmptyDate={this.renderEmptyDate.bind(this)}
+        rowHasChanged={this.rowHasChanged.bind(this)}
+        // markingType={'period'}
+        // markedDates={{
+        //    '2017-05-08': {textColor: '#666'},
+        //    '2017-05-09': {textColor: '#666'},
+        //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
+        //    '2017-05-21': {startingDay: true, color: 'blue'},
+        //    '2017-05-22': {endingDay: true, color: 'gray'},
+        //    '2017-05-24': {startingDay: true, color: 'gray'},
+        //    '2017-05-25': {color: 'gray'},
+        //    '2017-05-26': {endingDay: true, color: 'gray'}}}
+         // monthFormat={'yyyy'}
+         // theme={{calendarBackground: 'red', agendaKnobColor: 'green'}}
+        //renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
+      />
     );
+  }
+
+  loadItems(day) {
+    setTimeout(() => {
+      for (let i = -15; i < 85; i++) {
+        const time = day.timestamp + i * 24 * 60 * 60 * 1000;
+        const strTime = this.timeToString(time);
+        if (!this.state.items[strTime]) {
+          this.state.items[strTime] = [];
+          const numItems = Math.floor(Math.random() * 5);
+          for (let j = 0; j < numItems; j++) {
+            this.state.items[strTime].push({
+              name: 'Item for ' + strTime,
+              height: Math.max(50, Math.floor(Math.random() * 150))
+            });
+          }
+        }
+      }
+      //console.log(this.state.items);
+      const newItems = {};
+      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
+      this.setState({
+        items: newItems
+      });
+    }, 1000);
+    // console.log(`Load Items for ${day.year}-${day.month}`);
+  }
+
+  renderItem(item) {
+    return (
+      <View style={[styles.item, {height: item.height}]}><Text>{item.name}</Text></View>
+    );
+  }
+
+  renderEmptyDate() {
+    return (
+      <View style={styles.emptyDate}><Text>This is empty date!</Text></View>
+    );
+  }
+
+  rowHasChanged(r1, r2) {
+    return r1.name !== r2.name;
+  }
+
+  timeToString(time) {
+    const date = new Date(time);
+    return date.toISOString().split('T')[0];
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  item: {
+    backgroundColor: 'white',
     flex: 1,
-    backgroundColor: '#EBEBEB',
+    borderRadius: 5,
+    padding: 10,
+    marginRight: 10,
+    marginTop: 17
   },
-  formContent:{
-    flexDirection: 'row',
-    marginTop:30,
-  },
-  inputContainer: {
-      borderBottomColor: '#F5FCFF',
-      backgroundColor: '#FFFFFF',
-      borderRadius:30,
-      borderBottomWidth: 1,
-      height:45,
-      flexDirection: 'row',
-      alignItems:'center',
-      flex:1,
-      margin:10,
-  },
-  icon:{
-    width:30,
-    height:30,
-  },
-  iconBtnSearch:{
-    alignSelf:'center'
-  },
-  inputs:{
-      height:45,
-      marginLeft:16,
-      borderBottomColor: '#FFFFFF',
-      flex:1,
-  },
-  inputIcon:{
-    marginLeft:15,
-    justifyContent: 'center'
-  },
-  saveButton: {
-    height:45,
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin:10,
-    width:70,
-    alignSelf: 'flex-end',
-    backgroundColor: '#40E0D0',
-    borderRadius:30,
-  },
-  saveButtonText: {
-    color: 'white',
-  },
-  notificationList:{
-    marginTop:20,
-    padding:10,
-  },
-  notificationBox: {
-    padding:20,
-    marginTop:5,
-    marginBottom:5,
-    backgroundColor: '#FFFFFF',
-    flexDirection: 'row',
-    borderRadius:10,
-  },
-  image:{
-    width:45,
-    height:45,
-  },
-  description:{
-    fontSize:18,
-    color: "#3498db",
-    marginLeft:10,
-  },
-}); 
+  emptyDate: {
+    height: 15,
+    flex:1,
+    paddingTop: 30
+  }
+});
