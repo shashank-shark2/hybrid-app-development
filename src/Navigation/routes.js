@@ -10,8 +10,8 @@ import ProjectsScreen from '../Views/Projects';
 */
 export default [
   {name: 'Home', screen: HomeScreen, icon: 'airplane-takeoff'},
-  {name: 'Profile', screen: ProfileScreen, icon: 'airplane-takeoff'},
-  {name: 'Events', screen: EventsScreen, icon: 'compass-outline'},
-  {name: 'About', screen: AboutScreen, icon: 'information-outline'},
-  {name: 'Projects', screen: ProjectsScreen, icon: 'account-circle'},
+  {name: 'Events', screen: EventsScreen, icon: 'airplane-takeoff'},
+  {name: 'Projects', screen: ProjectsScreen, icon: 'compass-outline'},
+  {name: 'Profile', screen: ProfileScreen, icon: 'information-outline'},
+  {name:  'About', screen: AboutScreen, icon: 'account-circle'},
 ];
