@@ -50,7 +50,7 @@ export default class Screen3 extends Component {
                     </View>
 
 
-                    <View>
+                    <View style={{paddingBottom: 20, paddingLeft: 10, paddingRight: 10}}>
                         <Button
                             title="POST YOUR PROGRESS"
                             type="outline"
