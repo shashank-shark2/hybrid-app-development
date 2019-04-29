@@ -5,6 +5,8 @@ import { Text } from 'react-native-elements'
 import { Kaede } from 'react-native-textinput-effects';
 import { Madoka } from 'react-native-textinput-effects';
 import {AutoGrowingTextInput} from 'react-native-autogrow-textinput'
+import { Button } from 'react-native-elements'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class Screen3 extends Component {
     render() {
@@ -14,14 +16,14 @@ export default class Screen3 extends Component {
                         <Text h4 style={{textAlign: 'center', color: 'black'}}>ADD YOUR PROGRESS</Text>
                     </View>
 
-                    <View style={{paddingBottom: 30, paddingLeft: 10}}>
+                    <View style={{paddingBottom: 30, paddingLeft: 10, paddingRight: 10}}>
                         <Kaede
                             label={'REPO NAME'}
                             inputPadding={16}
                         />
                     </View>
 
-                    <View style={{paddingBottom: 30, paddingLeft: 10}}> 
+                    <View style={{paddingBottom: 30, paddingLeft: 10, paddingRight: 10}}> 
                         <Madoka
                             label={'Title'}
                             // this is used as active and passive border color
@@ -34,10 +36,10 @@ export default class Screen3 extends Component {
                     </View>
                     
                     <View>
-                        <Text style={{color: 'black', textAlign: 'center', paddingBottom: 10, paddingLeft: 10}}>Few lines about your progress</Text>
+                        <Text style={{color: 'black', textAlign: 'center', paddingBottom: 10, paddingLeft: 10, paddingRight: 10}}>Few lines about your progress</Text>
                     </View>
 
-                    <View style={{paddingBottom: 20}}>
+                    <View style={{paddingBottom: 20, paddingLeft: 10, paddingRight: 10}}>
                         <AutoGrowingTextInput 
                             minHeight={40}
                             maxHeight={200}
@@ -49,7 +51,11 @@ export default class Screen3 extends Component {
 
 
                     <View>
-
+                        <Button
+                            title="POST YOUR PROGRESS"
+                            type="outline"
+                            raised
+                            />
                     </View>
             </ScrollView>
         )
