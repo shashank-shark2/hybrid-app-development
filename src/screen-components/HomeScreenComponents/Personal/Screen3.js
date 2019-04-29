@@ -12,7 +12,7 @@ export default class Screen3 extends Component {
     render() {
         return (
             <ScrollView style={{padding: 4}}>
-                    <View style={{alignItems: 'center', paddingBottom: 5}}>
+                    <View style={{alignItems: 'center', paddingBottom: 50, paddingTop: 20}}>
                         <Text h4 style={{textAlign: 'center', color: 'black'}}>ADD YOUR PROGRESS</Text>
                     </View>
 
