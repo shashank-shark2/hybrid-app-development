@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet, ScrollView } from 'react-native'
+import { Grid, Row, Col } from 'react-native-easy-grid'
+import { Text } from 'react-native-elements'
 
 export default class Screen3 extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.TextHere}>Screen 3</Text>
-            </View>
+            <ScrollView>
+                    <View style={{alignItems: 'center'}}>
+                        <Text h4 style={{textAlign: 'center', color: 'black'}}>ADD YOUR PROGRESS</Text>
+                    </View>
+            </ScrollView>
         )
     }
 }
