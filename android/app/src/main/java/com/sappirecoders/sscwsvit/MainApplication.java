@@ -3,6 +3,9 @@ package com.sappirecoders.sscwsvit;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.BV.LinearGradient.LinearGradientPackage;
+import io.invertase.firebase.RNFirebasePackage;
+import com.wix.autogrowtextinput.AutoGrowTextInputPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -28,6 +31,7 @@ import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage;
 import io.invertase.firebase.perf.RNFirebasePerformancePackage;
 import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -43,9 +47,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+            new LinearGradientPackage(),
+            new RNFirebasePackage(),
+            new AutoGrowTextInputPackage(),
             new VectorIconsPackage(),
             new RNGestureHandlerPackage(),
-        new RNFirebasePackage(),
         // add/remove these packages as appropriate
         new RNFirebaseAdMobPackage(),
         new RNFirebaseAnalyticsPackage(),
