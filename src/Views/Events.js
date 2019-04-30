@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import Example from '../screen-components/EventComponents/index'
 
 export default class Events extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.TextHere}>Events Screen</Text>
-      </View>
+      <Example />
     )
   }
 }
