@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import ExampleList from '../screen-components/ProjectComponents/ExampleList'
 
 export default class Projects extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.TextHere}>Projects Screen</Text>
-      </View>
+      <ExampleList />
     )
   }
 }
