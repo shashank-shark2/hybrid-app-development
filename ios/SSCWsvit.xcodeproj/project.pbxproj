@@ -58,6 +58,7 @@
 		436CAFC3075C4397A4FA9890 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6475CB87DA484A99AD392E13 /* Octicons.ttf */; };
 		78F0ED072F3344E099CE0DF5 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4E1CCA73F9C4D10958887CA /* SimpleLineIcons.ttf */; };
 		CEB96AD8B24B4458B946074F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E78210678E4BFCB5E67D8B /* Zocial.ttf */; };
+		D0E2128631F84D2AAB25D5BC /* libAutoGrowTextInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B59BD46E2040ACBBA96204 /* libAutoGrowTextInput.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -391,6 +392,8 @@
 		6475CB87DA484A99AD392E13 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B4E1CCA73F9C4D10958887CA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E2E78210678E4BFCB5E67D8B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9B1F803A68D74E82946FEE8B /* AutoGrowTextInput.xcodeproj */ = {isa = PBXFileReference; name = "AutoGrowTextInput.xcodeproj"; path = "../node_modules/react-native-autogrow-textinput/ios/AutoGrowTextInput.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		99B59BD46E2040ACBBA96204 /* libAutoGrowTextInput.a */ = {isa = PBXFileReference; name = "libAutoGrowTextInput.a"; path = "libAutoGrowTextInput.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +424,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				66F583A38C047519D1E18159 /* libPods-SSCWsvit.a in Frameworks */,
 				8AEB10120B9847F8905B7DA1 /* libRNFirebase.a in Frameworks */,
+				D0E2128631F84D2AAB25D5BC /* libAutoGrowTextInput.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +633,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				8C34C759D8274A5CB8F8E751 /* RNFirebase.xcodeproj */,
+				9B1F803A68D74E82946FEE8B /* AutoGrowTextInput.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1389,10 +1394,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Debug;
@@ -1415,10 +1422,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Release;
@@ -1443,6 +1452,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Debug;
@@ -1466,6 +1476,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Release;
@@ -1497,10 +1508,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Debug;
@@ -1532,10 +1545,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Release;
@@ -1566,10 +1581,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Debug;
@@ -1600,10 +1617,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-autogrow-textinput/ios",
 				);
 			};
 			name = Release;
