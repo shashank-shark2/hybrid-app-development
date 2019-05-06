@@ -31,6 +31,8 @@ target 'SSCWsvit' do
 
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
 end
 
 target 'SSCWsvit-tvOS' do
