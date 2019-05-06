@@ -15,6 +15,7 @@ import Toolbar from '../Navigation/Toolbar';
 import AppNavigation from '../Navigation/AppNavigation';
 import { bgStatusBar, bgDrawer } from '../global.styles';
 import DrawerContent from '../Navigation/DrawerContent'
+import SplashScreen from 'react-native-splash-screen'
 
 
 let store = createStore(reducer);
@@ -33,6 +34,7 @@ export default class App extends Component {
 
   componentDidMount() {
     store.dispatch(setNavigator(this.navigator.current));
+    SplashScreen.hide();
   }
 
   openDrawer = () => {
