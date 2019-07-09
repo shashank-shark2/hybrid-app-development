@@ -13,10 +13,10 @@
 |   |   |   |
 |---|---|---|
 |  ![IntroScreen](/SSCWappimages/1.png) | ![DrawerNavigation](/SSCWappimages/2.png)  |  ![About and Credits](/SSCWappimages/3.png) |
-|  [Sample Screen 1](/SSCWappimages/4.png) |  ![Sample Screen 2](/SSCWappimages/5.png) |  ![Sample Screen 3](/SSCWappimages/6.png) |
+|  ![Sample Screen 1](/SSCWappimages/4.png) |  ![Sample Screen 2](/SSCWappimages/5.png) |  ![Sample Screen 3](/SSCWappimages/6.png) |
 |  ![Sample Screen 4](/SSCWappimages/7.png) | ![Sample Screen 3](/SSCWappimages/8.png)  | ![Sample Screen 3](/SSCWappimages/9.png)  |
 |  ![Sample Screen 3](/SSCWappimages/10.png) | ![Sample Screen 3](/SSCWappimages/11.png)  | ![Sample Screen 3](/SSCWappimages/12.png)  |
-|  [Sample Screen 3](/SSCWappimages/14.png) | ![Sample Screen 3](/SSCWappimages/15.png)  |  ![Sample Screen 3](/SSCWappimages/16.png) |
-| ![Sample Screen 3](/SSCWappimages/17.png)  |  [Sample Screen 3](/SSCWappimages/18.png) |  |
+|  ![Sample Screen 3](/SSCWappimages/14.png) | ![Sample Screen 3](/SSCWappimages/15.png)  |  ![Sample Screen 3](/SSCWappimages/16.png) |
+| ![Sample Screen 3](/SSCWappimages/17.png)  |  ![Sample Screen 3](/SSCWappimages/18.png) | ![Sample Screen 3](/SSCWappimages/13.png) |
 
 Few snapshots of my app.
