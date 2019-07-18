@@ -1,38 +1,38 @@
 {
-  "name": "Darrell Schmeler",
-  "username": "Leola_VonRueden",
+  "name": "Shashank J",
+  "username": "shashank-shark",
   "address": {
-    "streetA": "Abbott Shoals",
-    "streetB": "505 Winona Place",
-    "streetC": "4306 Hudson Street Suite 875",
-    "streetD": "Suite 489",
-    "city": "Ginatown",
-    "state": "Massachusetts",
-    "country": "Nepal",
-    "zipcode": "41428-0189",
+    "streetA": "Gauribidanur",
+    "streetB": "Gauribidanur",
+    "streetC": "Gauribidanur",
+    "streetD": "Gauribidanur",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "zipcode": "560064",
     "geo": {
       "lat": "-75.8513",
       "lng": "81.3262"
     }
   },
-  "website": "destany.org",
+  "website": "https://github.com/shashank-shark",
   "bio":
-    "Web & Mobile UI/UX designer, Motion designer following the latest ui & ux trends",
+    "Developer and Researcher",
   "company": {
-    "name": "Streich, Harber and Hilpert",
-    "catchPhrase": "Team-oriented hybrid neural-net",
-    "bs": "user-centric embrace vortals"
+    "name": "SELF",
+    "catchPhrase": "SELF",
+    "bs": "SELF"
   },
-  "avatar": "https://pbs.twimg.com/profile_images/909953369694859265/BOakwKQY_400x400.jpg",
+  "avatar": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwi55JazuL7jAhVC6XMBHSjVDOcQjRx6BAgBEAU&url=https%3A%2F%2Fgithub.com%2Fshashank-shark&psig=AOvVaw2vaXOEMsvaKpqhRVLkq0uy&ust=1563538353678378",
   "avatarBackground":
     "https://orig00.deviantart.net/dcd7/f/2014/027/2/0/mountain_background_by_pukahuna-d73zlo5.png",
   "tels": [
-    { "id": 1, "name": "Mobile", "number": "+66 (089)-928-2134" },
-    { "id": 2, "name": "Work", "number": "+41 (112)-435-9887" }
+    { "id": 1, "name": "Mobile", "number": "+91 9380021471" },
+    { "id": 2, "name": "Work", "number": "+91 9900767621" }
   ],
   "emails": [
-    { "id": 1, "name": "Personal", "email": "elsie-goodman@mail.com" },
-    { "id": 2, "name": "Work", "email": "elsie@work.com" }
+    { "id": 1, "name": "Personal", "email": "www.shashankreddy@gmail.com" },
+    { "id": 2, "name": "Work", "email": "shashankj.16cs@saividya.ac.in" }
   ],
   "posts": [
     {
@@ -44,14 +44,14 @@
       "paragraph":
         "Beatae voluptas ea magni quibusdam dolorem sit aut qui. Dolorem rerum et consequuntur inventore officia excepturi dolore architecto fuga. Quia consequatur asperiores rerum qui corporis dolorum. At harum velit adipisci iste odit modi veniam ut. Deserunt quibusdam velit non ea.",
       "image":
-        "https://d25tv1xepz39hi.cloudfront.net/2016-12-19/files/foodphotoghacks_image8.jpg",
+        "https://camo.githubusercontent.com/e4b938f49616e939e68af703fc06495d6a03016d/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f657370383236362d6578706572696d656e74732e61707073706f742e636f6d2f6f2f657370383236362d6d61696e2532466f75747075742d73637265656e2d696d616765732532466d61632d66696e642d73657269616c2e6a70673f616c743d6d6564696126746f6b656e3d31366232303436322d336636352d343066632d386634332d666436373636626562383034",
       "createdDate": "2017-11-21T02:33:53.770Z",
       "user": {
-        "name": "Ronaldo",
-        "username": "Ronaldo.Effertz",
+        "name": "Shashank J",
+        "username": "shashank-shark",
         "avatar":
-          "https://s3.amazonaws.com/uifaces/faces/twitter/samuelkraft/128.jpg",
-        "email": "Ronaldo.Effertz.Deckow@hotmail.com"
+          "https://camo.githubusercontent.com/e4b938f49616e939e68af703fc06495d6a03016d/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f657370383236362d6578706572696d656e74732e61707073706f742e636f6d2f6f2f657370383236362d6d61696e2532466f75747075742d73637265656e2d696d616765732532466d61632d66696e642d73657269616c2e6a70673f616c743d6d6564696126746f6b656e3d31366232303436322d336636352d343066632d386634332d666436373636626562383034",
+        "email": "www.shashankreddy@gmail.com"
       }
     },
     {
