@@ -2,11 +2,10 @@
 --------------------------------------
 ## **INDEX**
 1. [Snapshots](#Snapshots)
-2. [External Libraries used]()
-3. [Use of NoSQL Database]()
-4. [Making Serverless]()
-5. [Try Out]()
-6. [Contact me!]()
+2. [External Libraries used](#external-libraries-used)
+3. [package.json file](#package.json-file)
+4. [Try Out](#try-out)
+5. [Contact me!](#contact-me)
 --------------------------------------
 ## **Snapshots**
 
@@ -37,7 +36,7 @@ Some of the main external opensource libraries used in the boilerplate are :
 * React Native Firebase makes using Firebase with React Native simple. It provides a light-weight layer on-top of the native Firebase SDKs (iOS & Android) whilst mirroring the Firebase Web SDKs API as closely as possible.
 
 ```json
-"react-native-firebase": "^5.3.1",
+"react-native-firebase": "^5.3.1"
 ```
 
 * **Official Link** :  https://rnfirebase.io/docs/v5.x.x/getting-started
@@ -136,3 +135,70 @@ Some of the main external opensource libraries used in the boilerplate are :
 * **Official Link** : https://github.com/oblador/react-native-vector-icons
 
 
+## **package.json file**
+> package.json
+
+```json
+{
+  "name": "SSCWsvit",
+  "version": "5.3.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios --simulator=\"iPhone X\"",
+    "apk": "cd android && ./gradlew assembleRelease",
+    "rename": "node ./bin/rename.js",
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "react": "16.8.3",
+    "react-native": "0.59.5",
+    "react-native-autogrow-textinput": "^5.2.0",
+    "react-native-calendars": "^1.66.0",
+    "react-native-easy-grid": "^0.2.1",
+    "react-native-elements": "^1.1.0",
+    "react-native-firebase": "^5.3.1",
+    "react-native-foldview": "^1.2.1",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-native-paper": "^2.15.2",
+    "react-native-really-awesome-button": "^1.4.2",
+    "react-native-snap-carousel": "^3.7.5",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-super-grid": "^3.0.4",
+    "react-native-textinput-effects": "^0.5.1",
+    "react-native-timeline-listview": "^0.2.3",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.8.1",
+    "react-navigation-material-bottom-tabs": "^1.0.0",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "fs-extra": "^7.0.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3",
+    "replace-in-file": "^3.4.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
+```
+
+## **TRY OUT**
+(1) **Clone the repository** :  $] ``` git clone https://github.com/shashank-shark/SSCWsvit```
+
+(2) **Install the dependencies** : $] `` yarn install``
+
+(3) **Run** : $] ``` react-native run-android```
+
+
+## **Contact Me**
+If you are a small or independent organization/startup looking to grow your business locally and digitally please contact me, I would help you to set up basic version of the android app for free. This is my contribution to support the concept of **Digital India**.
